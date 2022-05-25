@@ -8,6 +8,6 @@ ENV TEE_CLC_PACKAGE="TEE-CLC-${TEE_CLC_VERSION}.zip"
 RUN set -x \   
     && curl -fSsL "https://github.com/Microsoft/team-explorer-everywhere/releases/download/${TEE_CLC_VERSION}/${TEE_CLC_PACKAGE}" -O \
     && mkdir -p /opt/tf \
-    && tar xvzf "${TEE_CLC_PACKAGE}" -C /opt/tf -s'|[^/]*/||' \
+    && tar xvzf "${TEE_CLC_PACKAGE}" -C /opt/tf -s'|[^/]*/||'
 
 ENTRYPOINT ["/bin/bash"]
