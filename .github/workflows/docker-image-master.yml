@@ -22,5 +22,5 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           add_git_labels: true
-          repository: devopsmindset/roche-devops-tee-clc
+          repository: devopsmindset/tee-clc
           tags: latest
