@@ -2,9 +2,9 @@ FROM openjdk:8
 
 ARG TEE_CLC_VERSION
 
-ENV PATH="/opt/tf/${TEE_CLC_VERSION}":$PATH
 ENV TEE_CLC_VERSION="${TEE_CLC_VERSION:-14.137.0}"
 ENV TEE_CLC_PACKAGE="TEE-CLC-${TEE_CLC_VERSION}.zip"
+ENV PATH="/opt/tf/${TEE_CLC_VERSION}":$PATH
 
 RUN set -x \   
     && apt-get update && apt-get -y install libarchive-tools \
