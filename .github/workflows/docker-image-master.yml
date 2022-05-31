@@ -29,6 +29,7 @@ jobs:
       - name: Push to Docker hub
         uses: docker/build-push-action@v3
         with:
+          push: true
           add_git_labels: true
           repository: devopsmindset/tee-clc
           tags: latest
